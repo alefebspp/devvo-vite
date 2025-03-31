@@ -44,12 +44,6 @@ export async function getRings(
   return response.data;
 }
 
-/* export const getRings = (
-  options?: AxiosRequestConfig
-): Promise<AxiosResponse<GetRingsResponse>> => {
-  return api.get(`/rings/`, options);
-}; */
-
 export const updateRing = (
   id: string,
   updateRingBody: UpdateRingBody,

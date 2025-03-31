@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Analytics } from "@vercel/analytics/next";
 
 import AppRoutes from "./routes";
 import { AlertContextProvider } from "./context/alert-context";
@@ -17,6 +18,7 @@ function App() {
       <AlertContextProvider>
         <AppRoutes />
       </AlertContextProvider>
+      <Analytics />
     </QueryClientProvider>
   );
 }
